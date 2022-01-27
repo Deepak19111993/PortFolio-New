@@ -21,7 +21,7 @@ export const FooterWrapper = styled.div`
     rgba(23, 156, 219, 1) 100%,
     rgba(8, 175, 231, 1) 100%
   );
-  padding: 34px 0;
+  padding: 20px 0;
   color: #fff;
   @media screen and (max-width: 1600px) {
     padding: 20px 0;

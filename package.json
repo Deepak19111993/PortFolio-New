@@ -1,5 +1,6 @@
 {
   "name": "profile",
+  "homepage": "https://Deepak19111993.github.io/Portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^13.2.1",
     "antd": "^4.18.3",
     "axios": "^0.25.0",
+    "gh-pages": "^3.2.3",
     "json-server": "^0.17.0",
     "node-sass": "^7.0.1",
     "react": "^17.0.2",
@@ -18,6 +20,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "start": "react-scripts start",
     "json-server": "json-server --watch db.json --port 3005",
     "build": "react-scripts build",
@@ -41,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^2.5.3"
   }
 }
