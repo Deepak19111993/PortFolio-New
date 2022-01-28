@@ -12,6 +12,7 @@ import {
 } from "./Banner.styles";
 import bannerImg from "../../assets/images/banner-img.png";
 import { useLocation } from "react-router";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   const location = useLocation();
@@ -31,16 +32,12 @@ const Banner = () => {
                   bekasi, Let’s Work Together.
                 </BannerPera>
                 <BtnWrapper>
+                  <Link to="/contact" className="link-btn filled">
+                    hire me
+                  </Link>
                   <CustomButton href="/contact" className="filled">
                     hire me
                   </CustomButton>
-                  {/* <CustomButton
-                    href={myFile}
-                    download="Deepak Resume"
-                    // target="_blank"
-                  >
-                    get cv
-                  </CustomButton> */}
                   <CustomButton href="/getcv">get cv</CustomButton>
                 </BtnWrapper>
               </BannerLeft>
