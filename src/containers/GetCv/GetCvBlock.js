@@ -68,7 +68,8 @@ const GetCvBlock = () => {
           </span>
           <ul>
             <li style={{ color: "#fff" }}>
-              I have completed Certified Certificate of diploma (2.5 years)
+              I have completed Certified Certificate of diploma (Software) (2.5
+              years)
             </li>
           </ul>
         </div>
@@ -104,7 +105,7 @@ const GetCvBlock = () => {
           <ul>
             <li>
               Here I learned basic structure of html and css and how to create
-              design by structurable with html and css.
+              design by structurable with Html, Css and Scss.
             </li>
           </ul>
         </div>
@@ -114,7 +115,7 @@ const GetCvBlock = () => {
           <span className="company-title">WedoWebApps Pvt Ltd</span>
           <ul>
             <li>Here was on Traning Priod in this company.</li>
-            <li>I learned here html and css.</li>
+            <li>I learned here Html, Css and Scss.</li>
           </ul>
         </div>
         <Title className="cv-title">my skills</Title>
