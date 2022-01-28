@@ -147,7 +147,7 @@ const GetCvBlock = () => {
       {/* <CustomButton href={cv} download="Deepak Resume" className="cv">
         Download Cv
       </CustomButton> */}
-      <Link to={cv} download="Deepak Resume" className="link-btn cv">
+      <Link to={cv} download className="link-btn cv" target="_blank">
         Download Cv
       </Link>
     </GetCvBlockWrapper>
