@@ -5,6 +5,7 @@ import { CustomButton, Title } from "../../assets/styles/Global.styles";
 import { Progress } from "antd";
 import { AimOutlined } from "@ant-design/icons";
 import cv from "../../assets/images/cv.png";
+import { Link } from "react-router-dom";
 
 const GetCvBlock = () => {
   return (
@@ -142,9 +143,12 @@ const GetCvBlock = () => {
           </div>
         </div>
       </div>
-      <CustomButton href={cv} download="Deepak Resume" className="cv">
+      {/* <CustomButton href={cv} download="Deepak Resume" className="cv">
         Download Cv
-      </CustomButton>
+      </CustomButton> */}
+      <Link to={cv} download="Deepak Resume" className="link-btn cv">
+        Download Cv
+      </Link>
     </GetCvBlockWrapper>
   );
 };

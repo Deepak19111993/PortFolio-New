@@ -94,9 +94,12 @@ const PortfolioSection = () => {
           {location.pathname === "/portfolio" ? (
             ""
           ) : (
-            <CustomButton href="/portfolio" className="view-btn">
+            // <CustomButton href="/portfolio" className="view-btn">
+            //   View All
+            // </CustomButton>
+            <Link to="/portfolio" className="link-btn view-btn">
               View All
-            </CustomButton>
+            </Link>
           )}
         </PortfolioInnerWrapper>
       </div>

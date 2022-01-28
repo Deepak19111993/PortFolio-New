@@ -35,10 +35,9 @@ const Banner = () => {
                   <Link to="/contact" className="link-btn filled">
                     hire me
                   </Link>
-                  <CustomButton href="/contact" className="filled">
-                    hire me
-                  </CustomButton>
-                  <CustomButton href="/getcv">get cv</CustomButton>
+                  <Link to="/getcv" className="link-btn">
+                    get cv
+                  </Link>
                 </BtnWrapper>
               </BannerLeft>
               <BannerRight>
