@@ -1,6 +1,6 @@
 import React from "react";
 import { FooterWrapper } from "./Footer.styles";
-import footerLogo from "../../assets/images/Rauliqbal.png";
+import footerLogo from "../../assets/images/deepak.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {

@@ -224,14 +224,17 @@ export const HeaderWrapper = styled.div`
 export const HeaderLogo = styled.img`
   float: left;
   height: 100%;
-  width: 180px;
+  width: 130px;
   object-fit: contain;
   position: relative;
   z-index: 1000;
   @media screen and (max-width: 1440px) {
-    width: 150px;
+    width: 120px;
   }
   @media screen and (max-width: 991px) {
-    width: 130px;
+    width: 100px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 80px;
   }
 `;

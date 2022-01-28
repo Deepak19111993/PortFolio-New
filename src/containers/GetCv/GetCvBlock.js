@@ -1,6 +1,6 @@
 import React from "react";
 import { CvAvatar, GetCvBlockWrapper } from "./GetCv.styles";
-import avatarImg from "../../assets/images/portfolio2.png";
+import avatarImg from "../../assets/images/user.png";
 import { CustomButton, Title } from "../../assets/styles/Global.styles";
 import { Progress } from "antd";
 import { AimOutlined } from "@ant-design/icons";

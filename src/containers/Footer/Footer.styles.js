@@ -31,18 +31,20 @@ export const FooterWrapper = styled.div`
   }
   .footer-logo {
     margin-bottom: 15px;
-    width: 150px;
+    width: 100px;
     @media screen and (max-width: 1600px) {
-      width: 150px;
+      width: 100px;
       margin-bottom: 10px;
     }
     @media screen and (max-width: 1199px) {
-      width: 120px;
       margin-bottom: 10px;
     }
     @media screen and (max-width: 991px) {
       width: 100px;
       margin-bottom: 10px;
+    }
+    @media screen and (max-width: 767px) {
+      width: 80px;
     }
     @media screen and (max-width: 575px) {
       margin-bottom: 5px;
