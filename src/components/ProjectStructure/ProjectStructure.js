@@ -56,8 +56,6 @@ const ProjectStructure = ({ fiveList, data }) => {
                   }}
                 ></Link>
               )}
-              {/* <Link to="" className="icon icon-heart"></Link>
-              <Link to="" className="icon-Vector"></Link> */}
             </div>
           </div>
         </ProjectItem>

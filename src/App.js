@@ -4,6 +4,7 @@ import GlobalStyle from "./assets/styles/Global.styles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
+  // debugger;
   return (
     <div className="App">
       <BrowserRouter>

@@ -30,11 +30,11 @@ const GetCvBlock = () => {
         </Title>
         <ul className="contact">
           <li>
-            <span class="icon icon-mail"></span>
+            <span className="icon icon-mail"></span>
             <a href="mailto:deepak207510@gmail.com">deepak207510@gmail.com</a>
           </li>
           <li>
-            <span class="icon icon-call"></span>
+            <span className="icon icon-call"></span>
             <a href="phone:+91 799035823">+91 7990335823</a>
           </li>
           <li>

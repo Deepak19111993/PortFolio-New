@@ -35,35 +35,35 @@ const ContactForm = () => {
         </Peragraph>
         <ul className="contact-detail">
           <li>
-            <span class="icon icon-user"></span>Deepak Singh
+            <span className="icon icon-user"></span>Deepak Singh
           </li>
           <li>
-            <span class="icon icon-call"></span>+91 7990335823
+            <span className="icon icon-call"></span>+91 7990335823
           </li>
           <li>
-            <span class="icon icon-mail"></span>
+            <span className="icon icon-mail"></span>
             <a href="mailto:deepak207510@gmail.com">deepak207510@gmail.com</a>
           </li>
         </ul>
         <ul className="social-media">
           <li>
             <a href="/contact">
-              <span class="icon icon-dribble"></span>
+              <span className="icon icon-dribble"></span>
             </a>
           </li>
           <li>
             <a href="/contact">
-              <span class="icon icon-Facebook"></span>
+              <span className="icon icon-Facebook"></span>
             </a>
           </li>
           <li>
             <a href="/contact">
-              <span class="icon icon-Twitter"></span>
+              <span className="icon icon-Twitter"></span>
             </a>
           </li>
           <li>
             <a href="/contact">
-              <span class="icon icon-Instagram"></span>
+              <span className="icon icon-Instagram"></span>
             </a>
           </li>
         </ul>

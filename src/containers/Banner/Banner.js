@@ -12,7 +12,6 @@ import {
 } from "./Banner.styles";
 import bannerImg from "../../assets/images/banner-img.png";
 import { useLocation } from "react-router";
-// import myFile from "../../assets/images/cv.pdf";
 
 const Banner = () => {
   const location = useLocation();

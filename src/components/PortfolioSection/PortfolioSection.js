@@ -10,102 +10,10 @@ import {
   TabList,
   TabPaneContent,
 } from "./PortfolioSection.styles";
-// import { Tabs } from "antd";
 import ProjectStructure from "../ProjectStructure/ProjectStructure";
 import { useLocation } from "react-router";
 import portfolioDataList from "../portfolioDataList";
-// import portfolioImg1 from "../../assets/images/portfolio1.png";
-// import portfolioImg2 from "../../assets/images/portfolio2.png";
-// import portfolioImg3 from "../../assets/images/portfolio3.png";
-// import portfolioImg4 from "../../assets/images/portfolio4.png";
-// const { TabPane } = Tabs;
-
-// function callback(key) {
-//   console.log(key);
-// }
-
-// const portfolioDataList = [
-//   {
-//     id: 1,
-//     imageGet: portfolioImg1,
-//     alt: "image1",
-//     title: "Html",
-//     class: "first",
-//     category: "html",
-//   },
-//   {
-//     id: 2,
-//     imageGet: portfolioImg2,
-//     alt: "image2",
-//     title: "Html",
-//     class: "second",
-//     category: "html",
-//   },
-//   {
-//     id: 3,
-//     imageGet: portfolioImg3,
-//     alt: "image3",
-//     title: "Html",
-//     class: "third",
-//     category: "html",
-//   },
-//   {
-//     id: 4,
-//     imageGet: portfolioImg4,
-//     alt: "image4",
-//     title: "React Js",
-//     class: "fourth",
-//     category: "react",
-//   },
-//   {
-//     id: 5,
-//     imageGet: portfolioImg1,
-//     alt: "image5",
-//     title: "Bootstrap",
-//     class: "fifth",
-//     category: "bootstrap",
-//   },
-//   {
-//     id: 6,
-//     imageGet: portfolioImg2,
-//     alt: "image6",
-//     title: "Html",
-//     class: "",
-//     category: "html",
-//   },
-//   {
-//     id: 7,
-//     imageGet: portfolioImg3,
-//     alt: "image7",
-//     title: "React Js",
-//     class: "",
-//     category: "react",
-//   },
-//   {
-//     id: 8,
-//     imageGet: portfolioImg4,
-//     alt: "image8",
-//     title: "Html",
-//     class: "",
-//     category: "html",
-//   },
-//   {
-//     id: 9,
-//     imageGet: portfolioImg1,
-//     alt: "image9",
-//     title: "React Js",
-//     class: "",
-//     category: "react",
-//   },
-//   {
-//     id: 10,
-//     imageGet: portfolioImg2,
-//     alt: "image10",
-//     title: "React Js",
-//     class: "",
-//     category: "react",
-//   },
-// ];
+import { Link } from "react-router-dom";
 
 const PortfolioSection = () => {
   const location = useLocation();

@@ -21,6 +21,7 @@ import GetCv from "../GetCv/GetCv";
 
 const Content = () => {
   const location = useLocation();
+  console.log(location);
   return (
     <>
       <HeroSection
