@@ -12,7 +12,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import Portfolio from "../Portfolio/Portfolio";
 import Home from "../Home/Home";
-import logo from "../../assets/images/Rauliqbal.png";
+import logo from "../../assets/images/deepak.png";
 // import logo from "../../assets/images/deepak.png";
 import { useLocation } from "react-router";
 
