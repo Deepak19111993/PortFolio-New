@@ -26,7 +26,12 @@ const ContactForm = () => {
 
   console.log(data);
   return (
-    <ConatctFormWrapper>
+    <ConatctFormWrapper
+      data-aos="fade-down"
+      data-aos-mirror="true"
+      data-aos-duration="2000"
+      data-aos-delay="500"
+    >
       <ConatctFormLeft>
         <Title className="contact-title">Contact Information</Title>
         <Peragraph className="contact-pera">

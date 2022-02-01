@@ -8,13 +8,24 @@ import {
 
 const SkillSection = () => {
   return (
-    <SkillSectionWrapper>
+    <SkillSectionWrapper
+    // data-aos="fade-up"
+    // data-aos-mirror="true"
+    // data-aos-duration="2000"
+    >
       <div className="container">
-        <TopTitle style={{ textAlign: "center" }}>WHAT I DO</TopTitle>
-        <Title className="title" style={{ textAlign: "center" }}>
-          Specializing In
-        </Title>
-        <SkillCardListWrapper>
+        <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000">
+          <TopTitle style={{ textAlign: "center" }}>WHAT I DO</TopTitle>
+          <Title className="title" style={{ textAlign: "center" }}>
+            Specializing In
+          </Title>
+        </div>
+        <SkillCardListWrapper
+          data-aos="fade-left"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+        >
           <SkillCardList />
         </SkillCardListWrapper>
       </div>

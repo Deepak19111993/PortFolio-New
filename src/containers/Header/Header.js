@@ -15,6 +15,7 @@ import Home from "../Home/Home";
 import logo from "../../assets/images/deepak.png";
 // import logo from "../../assets/images/deepak.png";
 import { useLocation } from "react-router";
+import "aos/dist/aos.css";
 
 const Header = () => {
   const location = useLocation();
@@ -59,9 +60,11 @@ const Header = () => {
       }
     >
       <div className="container">
+        {/* <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000"> */}
         <Link to="/">
           <HeaderLogo src={logo} alt="logo" />
         </Link>
+        {/* </div> */}
         <div className="navbar" id={openLink ? "open" : ""}>
           <ul className="nav" id={openLink ? "hidden" : ""}>
             <li>

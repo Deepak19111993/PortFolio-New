@@ -7,8 +7,15 @@ const ContactSection = () => {
   return (
     <ContactWrapper>
       <div className="container">
-        <TopTitle style={{ textAlign: "center" }}>CONTACT ME</TopTitle>
-        <Title style={{ textAlign: "center" }}>Get In Touch</Title>
+        <div
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          // data-aos-delay="1000"
+        >
+          <TopTitle style={{ textAlign: "center" }}>CONTACT ME</TopTitle>
+          <Title style={{ textAlign: "center" }}>Get In Touch</Title>
+        </div>
         <ContactForm />
       </div>
     </ContactWrapper>

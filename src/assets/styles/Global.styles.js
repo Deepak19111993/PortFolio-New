@@ -1,5 +1,18 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, keyframes } from "styled-components";
 import banner from "../images/bg-hero.png";
+import "animate.css/animate.min.css";
+import { fadeInLeft, fadeInRight } from "react-animations";
+
+// const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+// const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+// export const FadeInLeft = styled.div`
+//   animation: 1s ${fadeInLeftAnimation};
+// `;
+// export const FadeInRight = styled.div`
+//   animation: 2s ${fadeInRightAnimation};
+//   animation-delay: 2s;
+// `;
 
 const GlobalStyle = createGlobalStyle`
 

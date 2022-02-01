@@ -153,16 +153,17 @@ export const ConatctFormWrapper = styled.div`
           justify-content: center;
           border-radius: 30px;
           background: #4275fa;
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 500;
           padding: 0 20px;
           border: none;
           margin-top: 5px;
-          @media screen and (max-width: 1600px) {
-            font-size: 14px;
-            padding: 0 15px;
+          @media screen and (max-width: 1440px) {
+            font-size: 16px;
+            padding: 0 20px;
           }
           @media screen and (max-width: 767px) {
+            font-size: 14px;
             height: 35px;
             line-height: 35px;
           }

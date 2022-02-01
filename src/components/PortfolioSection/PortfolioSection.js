@@ -40,11 +40,18 @@ const PortfolioSection = () => {
   return (
     <PortfolioWrapper>
       <div className="container">
-        <TopTitle style={{ textAlign: "center" }}>MY PORTFOLIO</TopTitle>
-        <Title className="title" style={{ textAlign: "center" }}>
-          Recent Works
-        </Title>
-        <PortfolioInnerWrapper>
+        <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000">
+          <TopTitle style={{ textAlign: "center" }}>MY PORTFOLIO</TopTitle>
+          <Title className="title" style={{ textAlign: "center" }}>
+            Recent Works
+          </Title>
+        </div>
+        <PortfolioInnerWrapper
+          data-aos="fade-right"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+        >
           <TabList>
             <button
               id="all"
