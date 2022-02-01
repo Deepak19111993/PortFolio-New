@@ -14,7 +14,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "antd/dist/antd.css";
-import "animate.css/animate.min.css";
+// import "animate.css/animate.min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();

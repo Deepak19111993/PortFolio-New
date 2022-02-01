@@ -40,6 +40,7 @@ export const SkillCardItem = styled.div`
     width: calc(100% / 2 - 8px);
     margin-bottom: 50px;
     margin-right: 15px;
+    border-radius: 0 10px 0 0;
   }
   @media screen and (max-width: 575px) {
     width: 100%;
