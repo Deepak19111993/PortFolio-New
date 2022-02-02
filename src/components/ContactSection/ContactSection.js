@@ -11,6 +11,7 @@ const ContactSection = () => {
           data-aos="fade-up"
           data-aos-mirror="true"
           data-aos-duration="2000"
+          data-aos-once="true"
           // data-aos-delay="1000"
         >
           <TopTitle style={{ textAlign: "center" }}>CONTACT ME</TopTitle>

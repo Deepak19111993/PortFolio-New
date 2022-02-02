@@ -25,6 +25,7 @@ const AboutSection = () => {
           data-aos="fade-up"
           data-aos-mirror="true"
           data-aos-duration="2000"
+          data-aos-once="true"
         >
           <AboutImg src={aboutImg} alt="aboutImg" />
         </AboutLeft>
@@ -33,6 +34,7 @@ const AboutSection = () => {
           data-aos="fade-left"
           data-aos-mirror="true"
           data-aos-duration="2000"
+          data-aos-once="true"
           // data-aos-delay="100"
         >
           <TopTitle>ABOUT ME</TopTitle>

@@ -35,6 +35,7 @@ const Banner = () => {
                 data-aos="fade-right"
                 data-aos-mirror="true"
                 data-aos-duration="2000"
+                data-aos-once="true"
               >
                 <BannerTitleName>hello, im deepak</BannerTitleName>
                 <Designation>html developer / front end developer</Designation>
@@ -57,6 +58,7 @@ const Banner = () => {
                 data-aos="fade-up"
                 data-aos-mirror="true"
                 data-aos-duration="2000"
+                data-aos-once="true"
               >
                 <BannerImg src={bannerImg} alt="" />
               </BannerRight>

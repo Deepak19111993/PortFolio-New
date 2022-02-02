@@ -40,7 +40,12 @@ const PortfolioSection = () => {
   return (
     <PortfolioWrapper>
       <div className="container">
-        <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000">
+        <div
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          data-aos-once="true"
+        >
           <TopTitle style={{ textAlign: "center" }}>MY PORTFOLIO</TopTitle>
           <Title className="title" style={{ textAlign: "center" }}>
             Recent Works
@@ -51,6 +56,7 @@ const PortfolioSection = () => {
           data-aos-mirror="true"
           data-aos-duration="2000"
           data-aos-delay="500"
+          data-aos-once="true"
         >
           <TabList>
             <button

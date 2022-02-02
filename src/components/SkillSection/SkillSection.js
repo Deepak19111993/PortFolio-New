@@ -14,7 +14,12 @@ const SkillSection = () => {
     // data-aos-duration="2000"
     >
       <div className="container">
-        <div data-aos="fade-up" data-aos-mirror="true" data-aos-duration="2000">
+        <div
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          data-aos-once="true"
+        >
           <TopTitle style={{ textAlign: "center" }}>WHAT I DO</TopTitle>
           <Title className="title" style={{ textAlign: "center" }}>
             Specializing In
@@ -25,6 +30,7 @@ const SkillSection = () => {
           data-aos-mirror="true"
           data-aos-duration="2000"
           data-aos-delay="500"
+          data-aos-once="true"
         >
           <SkillCardList />
         </SkillCardListWrapper>

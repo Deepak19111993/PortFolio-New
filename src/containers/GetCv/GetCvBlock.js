@@ -73,6 +73,36 @@ const GetCvBlock = () => {
             </li>
           </ul>
         </div>
+        <div className="work-ex">
+          <span className="cv-current-work" style={{ color: "#fff" }}>
+            Worked Live link
+          </span>
+          <ul>
+            <li style={{ color: "#fff" }}>
+              <Link
+                to="https://relaxed-mcclintock-a17c4c.netlify.app/"
+                style={{ color: "#fff" }}
+              >
+                Own Portfolio with React Js
+              </Link>
+            </li>
+            <li style={{ color: "#fff" }}>
+              <Link to="https://www.wedowebapps.com/" style={{ color: "#fff" }}>
+                Wedowebapps
+              </Link>
+            </li>
+            <li style={{ color: "#fff" }}>
+              <Link to="https://creole.uat1950.com/" style={{ color: "#fff" }}>
+                Target Align
+              </Link>
+            </li>
+            <li style={{ color: "#fff" }}>
+              <Link to="https://creole.uat1950.com/" style={{ color: "#fff" }}>
+                Frimarked
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="block">
         <Title className="cv-title">work Experiences</Title>

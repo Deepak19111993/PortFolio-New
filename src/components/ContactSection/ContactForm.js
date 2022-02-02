@@ -31,6 +31,7 @@ const ContactForm = () => {
       data-aos-mirror="true"
       data-aos-duration="2000"
       data-aos-delay="500"
+      data-aos-once="true"
     >
       <ConatctFormLeft>
         <Title className="contact-title">Contact Information</Title>
