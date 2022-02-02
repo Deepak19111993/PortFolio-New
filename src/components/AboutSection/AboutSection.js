@@ -10,6 +10,7 @@ import {
 } from "./AboutSection.styles";
 import aboutImg from "../../assets/images/about-img.png";
 import {
+  FadeInRight,
   Peragraph,
   SubTitle,
   Title,
@@ -20,10 +21,22 @@ const AboutSection = () => {
   return (
     <AboutSectionWrapper>
       <div className="container">
-        <AboutLeft>
+        <AboutLeft
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          data-aos-once="true"
+        >
           <AboutImg src={aboutImg} alt="aboutImg" />
         </AboutLeft>
-        <AboutRight>
+        {/* <FadeInRight> */}
+        <AboutRight
+          data-aos="fade-left"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          data-aos-once="true"
+          // data-aos-delay="100"
+        >
           <TopTitle>ABOUT ME</TopTitle>
           <Title className="title">Html Developer / Front End Developer</Title>
           <Peragraph>
@@ -49,6 +62,7 @@ const AboutSection = () => {
             </HobbyList>
           </div>
         </AboutRight>
+        {/* </FadeInRight> */}
       </div>
     </AboutSectionWrapper>
   );

@@ -40,11 +40,24 @@ const PortfolioSection = () => {
   return (
     <PortfolioWrapper>
       <div className="container">
-        <TopTitle style={{ textAlign: "center" }}>MY PORTFOLIO</TopTitle>
-        <Title className="title" style={{ textAlign: "center" }}>
-          Recent Works
-        </Title>
-        <PortfolioInnerWrapper>
+        <div
+          data-aos="fade-up"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          data-aos-once="true"
+        >
+          <TopTitle style={{ textAlign: "center" }}>MY PORTFOLIO</TopTitle>
+          <Title className="title" style={{ textAlign: "center" }}>
+            Recent Works
+          </Title>
+        </div>
+        <PortfolioInnerWrapper
+          data-aos="fade-right"
+          data-aos-mirror="true"
+          data-aos-duration="2000"
+          data-aos-delay="500"
+          data-aos-once="true"
+        >
           <TabList>
             <button
               id="all"
@@ -94,9 +107,12 @@ const PortfolioSection = () => {
           {location.pathname === "/portfolio" ? (
             ""
           ) : (
-            <CustomButton href="/portfolio" className="view-btn">
+            // <CustomButton href="/portfolio" className="view-btn">
+            //   View All
+            // </CustomButton>
+            <Link to="/portfolio" className="link-btn view-btn">
               View All
-            </CustomButton>
+            </Link>
           )}
         </PortfolioInnerWrapper>
       </div>

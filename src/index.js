@@ -1,19 +1,12 @@
 import React from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  BrowserRouter,
-  Switch,
-  Routes,
-  NavLink,
-  HashRouter,
-} from "react-router-dom";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "antd/dist/antd.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

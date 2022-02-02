@@ -131,6 +131,19 @@ export const PortfolioDetailWrapper = styled.div`
           }
         }
       }
+      .live-link {
+        text-decoration: underline;
+        margin-top: 5px;
+        display: block;
+        font-size: 16px;
+        color: #4275fa;
+        background: none;
+        padding: 0;
+        &:hover {
+          box-shadow: none;
+          background: none;
+        }
+      }
     }
   }
 `;

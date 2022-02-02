@@ -1,5 +1,6 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { CustomButton } from "../../assets/styles/Global.styles";
 import portfolioDataList from "../../components/portfolioDataList";
 import { PortfolioDetailWrapper } from "./PortfolioDetail.styles";
 
@@ -36,6 +37,30 @@ const PortfolioDetail = () => {
                 </span>
               ))}
             </div>
+            {/* <ul> */}
+            {productItem?.link?.map?.((item, index) => {
+              return (
+                <span key={index}>
+                  <CustomButton
+                    className="live-link"
+                    target="_blank"
+                    href={item.url}
+                  >
+                    {item.linkText}
+                  </CustomButton>
+                </span>
+              );
+            })}
+            {/* </ul> */}
+            {/* {productItem.link && productItem.linkText && (
+              <CustomButton
+                className="live-link"
+                target="_blank"
+                href={productItem.link}
+              >
+                {productItem.linkText}
+              </CustomButton>
+            )} */}
           </div>
         </div>
       </div>

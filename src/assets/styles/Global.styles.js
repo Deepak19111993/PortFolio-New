@@ -1,5 +1,18 @@
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle, keyframes } from "styled-components";
 import banner from "../images/bg-hero.png";
+import "animate.css/animate.min.css";
+import { fadeInLeft, fadeInRight } from "react-animations";
+
+// const fadeInLeftAnimation = keyframes`${fadeInLeft}`;
+// const fadeInRightAnimation = keyframes`${fadeInRight}`;
+
+// export const FadeInLeft = styled.div`
+//   animation: 1s ${fadeInLeftAnimation};
+// `;
+// export const FadeInRight = styled.div`
+//   animation: 2s ${fadeInRightAnimation};
+//   animation-delay: 2s;
+// `;
 
 const GlobalStyle = createGlobalStyle`
 
@@ -22,6 +35,77 @@ const GlobalStyle = createGlobalStyle`
           }
       }
   }
+
+  .link-btn{
+  border: 1px solid #fff;
+  color: #fff;
+  background: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 8px 25px;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s all;
+  @media screen and (max-width: 1440px) {
+    font-size: 16px;
+    padding: 5px 20px;
+  }
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+    @media screen and (max-width: 1199px) {
+      margin-right: 20px;
+    }
+  }
+  &.filled {
+    border: 1px solid #fff;
+    background: #fff;
+    color: #4275fa;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+    &:hover {
+      background: none;
+      color: #fff;
+      box-shadow: none;
+    }
+  }
+  &:hover {
+    background: #fff;
+    color: #4275fa;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 25%);
+  }
+  &.view-btn {
+    background: #4175fa;
+    border-color: #4175fa;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    margin: 30px auto 0;
+    @media screen and (max-width: 767px) {
+      margin: 20px auto 0;
+    }
+    &:hover {
+      background: none;
+      color: #4275fa;
+      border-color: #fff;
+    }
+  }
+  &.cv {
+    margin: 20px 0 0 auto;
+    background: #4175fa;
+    border: none;
+    &:hover {
+      background: none;
+    }
+  }
+}
+
 `;
 
 export const HeroSection = styled.div`

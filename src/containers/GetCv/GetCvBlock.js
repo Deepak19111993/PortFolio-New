@@ -5,6 +5,7 @@ import { CustomButton, Title } from "../../assets/styles/Global.styles";
 import { Progress } from "antd";
 import { AimOutlined } from "@ant-design/icons";
 import cv from "../../assets/images/cv.png";
+import { Link } from "react-router-dom";
 
 const GetCvBlock = () => {
   return (
@@ -67,7 +68,38 @@ const GetCvBlock = () => {
           </span>
           <ul>
             <li style={{ color: "#fff" }}>
-              I have completed Certified Certificate of diploma (2.5 years)
+              I have completed Certified Certificate of diploma (Software) (2.5
+              years)
+            </li>
+          </ul>
+        </div>
+        <div className="work-ex">
+          <span className="cv-current-work" style={{ color: "#fff" }}>
+            Worked Live link
+          </span>
+          <ul>
+            <li style={{ color: "#fff" }}>
+              <Link
+                to="https://relaxed-mcclintock-a17c4c.netlify.app/"
+                style={{ color: "#fff" }}
+              >
+                Own Portfolio with React Js
+              </Link>
+            </li>
+            <li style={{ color: "#fff" }}>
+              <Link to="https://www.wedowebapps.com/" style={{ color: "#fff" }}>
+                Wedowebapps
+              </Link>
+            </li>
+            <li style={{ color: "#fff" }}>
+              <Link to="https://creole.uat1950.com/" style={{ color: "#fff" }}>
+                Target Align
+              </Link>
+            </li>
+            <li style={{ color: "#fff" }}>
+              <Link to="https://creole.uat1950.com/" style={{ color: "#fff" }}>
+                Frimarked
+              </Link>
             </li>
           </ul>
         </div>
@@ -103,7 +135,7 @@ const GetCvBlock = () => {
           <ul>
             <li>
               Here I learned basic structure of html and css and how to create
-              design by structurable with html and css.
+              design by structurable with Html, Css and Scss.
             </li>
           </ul>
         </div>
@@ -113,7 +145,7 @@ const GetCvBlock = () => {
           <span className="company-title">WedoWebApps Pvt Ltd</span>
           <ul>
             <li>Here was on Traning Priod in this company.</li>
-            <li>I learned here html and css.</li>
+            <li>I learned here Html, Css and Scss.</li>
           </ul>
         </div>
         <Title className="cv-title">my skills</Title>
@@ -142,9 +174,12 @@ const GetCvBlock = () => {
           </div>
         </div>
       </div>
-      <CustomButton href={cv} download="Deepak Resume" className="cv">
+      {/* <CustomButton href={cv} download="Deepak Resume" className="cv">
         Download Cv
-      </CustomButton>
+      </CustomButton> */}
+      <Link to={cv} download className="link-btn cv" target="_blank">
+        Download Cv
+      </Link>
     </GetCvBlockWrapper>
   );
 };
