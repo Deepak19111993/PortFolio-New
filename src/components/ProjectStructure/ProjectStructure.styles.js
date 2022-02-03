@@ -170,7 +170,7 @@ export const ProjectItem = styled.div`
           &:hover {
             background: none;
             &::before {
-              color: #ff0000;
+              color: #fff;
             }
           }
         }

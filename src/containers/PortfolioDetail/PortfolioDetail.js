@@ -37,30 +37,18 @@ const PortfolioDetail = () => {
                 </span>
               ))}
             </div>
-            {/* <ul> */}
             {productItem?.link?.map?.((item, index) => {
               return (
-                <span key={index}>
-                  <CustomButton
-                    className="live-link"
-                    target="_blank"
-                    href={item.url}
-                  >
-                    {item.linkText}
-                  </CustomButton>
-                </span>
+                <CustomButton
+                  className={`live-link item-${index}`}
+                  target="_blank"
+                  href={item.url}
+                  key={index}
+                >
+                  {item.linkText}
+                </CustomButton>
               );
             })}
-            {/* </ul> */}
-            {/* {productItem.link && productItem.linkText && (
-              <CustomButton
-                className="live-link"
-                target="_blank"
-                href={productItem.link}
-              >
-                {productItem.linkText}
-              </CustomButton>
-            )} */}
           </div>
         </div>
       </div>

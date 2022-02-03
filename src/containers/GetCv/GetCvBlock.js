@@ -79,27 +79,27 @@ const GetCvBlock = () => {
           </span>
           <ul>
             <li style={{ color: "#fff" }}>
-              <Link
-                to="https://relaxed-mcclintock-a17c4c.netlify.app/"
+              <a
+                href="https://sad-shaw-2140e1.netlify.app/"
                 style={{ color: "#fff" }}
               >
                 Own Portfolio with React Js
-              </Link>
+              </a>
             </li>
             <li style={{ color: "#fff" }}>
-              <Link to="https://www.wedowebapps.com/" style={{ color: "#fff" }}>
+              <a href="https://www.wedowebapps.com/" style={{ color: "#fff" }}>
                 Wedowebapps
-              </Link>
+              </a>
             </li>
             <li style={{ color: "#fff" }}>
-              <Link to="https://creole.uat1950.com/" style={{ color: "#fff" }}>
+              <a href="https://creole.uat1950.com/" style={{ color: "#fff" }}>
                 Target Align
-              </Link>
+              </a>
             </li>
             <li style={{ color: "#fff" }}>
-              <Link to="https://creole.uat1950.com/" style={{ color: "#fff" }}>
+              <a href="https://creole.uat1950.com/" style={{ color: "#fff" }}>
                 Frimarked
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
