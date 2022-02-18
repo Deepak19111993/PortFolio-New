@@ -53,6 +53,7 @@ const Header = () => {
 
   return (
     <HeaderWrapper
+      // data-scroll-section
       className={
         location.pathname === "/portfolio" || location.pathname === "/getcv"
           ? "header portfolio-header"

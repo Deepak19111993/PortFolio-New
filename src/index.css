@@ -43,3 +43,7 @@ code {
   background-color: grey;
   border-radius: 20px;
 }
+
+.email-text a {
+  color: #fff !important;
+}

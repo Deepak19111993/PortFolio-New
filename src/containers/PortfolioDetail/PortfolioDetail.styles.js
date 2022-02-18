@@ -60,7 +60,8 @@ export const PortfolioDetailWrapper = styled.div`
         margin-top: 20px;
         display: flex;
         .item {
-          background: #ccc;
+          background: #4174f9;
+          color: #fff;
           padding: 5px 10px;
           border-radius: 3px;
           font-size: 14px;

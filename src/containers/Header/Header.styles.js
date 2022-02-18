@@ -168,12 +168,13 @@ export const HeaderWrapper = styled.div`
   }
   &.is-sticky {
     position: fixed;
-    top: 10px;
+    top: 20px;
     width: 100%;
     z-index: 1000;
     background: rgb(2, 0, 36);
-    transition: 0.4s all;
-    transform: translateY(-10px);
+    transition: 0.4s cubic-bezier(0, 1.65, 1, -0.92);
+    /* transition: 0.4s 0.4s cubic-bezier(0, 2.01, 0.92, 2.52); */
+    transform: translateY(-20px);
     background: linear-gradient(
       90deg,
       rgba(2, 0, 36, 1) 0%,

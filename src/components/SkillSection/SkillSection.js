@@ -9,6 +9,7 @@ import {
 const SkillSection = () => {
   return (
     <SkillSectionWrapper
+    // data-scroll-section
     // data-aos="fade-up"
     // data-aos-mirror="true"
     // data-aos-duration="2000"
@@ -19,6 +20,7 @@ const SkillSection = () => {
           data-aos-mirror="true"
           data-aos-duration="2000"
           data-aos-once="true"
+          className="skill-header-text"
         >
           <TopTitle style={{ textAlign: "center" }}>WHAT I DO</TopTitle>
           <Title className="title" style={{ textAlign: "center" }}>
