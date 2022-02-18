@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { ProjectItem, ProjectListWrapper } from "./ProjectStructure.styles";
-
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router";
@@ -11,7 +10,7 @@ const ProjectStructure = ({ fiveList, data }) => {
 
   const portfolioData = fiveList.map((item, index) => {
     const listLength = fiveList.length;
-    console.log(listLength);
+    // console.log(listLength);
     return (
       <>
         <ProjectItem

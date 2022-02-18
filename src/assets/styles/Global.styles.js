@@ -106,6 +106,26 @@ const GlobalStyle = createGlobalStyle`
   }
 }
 
+.slick-slider{
+  margin-top: 30px;
+  @media screen and (max-width: 767px){
+    margin-top: 0;
+  }
+  .slick-list{
+    .slick-track{
+      width: max-content !important;
+    .slick-slide{
+      &.slick-active{
+      }
+      >div{
+          display: flex;
+          margin-right: 5px;
+        }
+    }
+  }
+  }
+}
+
 `;
 
 export const HeroSection = styled.div`

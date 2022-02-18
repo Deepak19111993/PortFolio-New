@@ -4,6 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "antd/dist/antd.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();

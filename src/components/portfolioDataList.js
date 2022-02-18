@@ -109,7 +109,7 @@ const portfolioDataList = [
       "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from de Finibus Bonorum et Malorum",
       "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
     ],
-    badges: ["Bootstrap", "Css", "Sass", "Bootstrap"],
+    badges: ["Html", "Css", "Sass", "Bootstrap"],
     thumnailImages: [
       portfolioImg1,
       portfolioImg2,

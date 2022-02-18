@@ -14,10 +14,13 @@ import ProjectStructure from "../ProjectStructure/ProjectStructure";
 import { useLocation } from "react-router";
 import portfolioDataList from "../portfolioDataList";
 import { Link } from "react-router-dom";
+import OwlSlider from "../OwlSlider/OwlSlider";
 
 const PortfolioSection = () => {
   const location = useLocation();
   const [isActive, setActive] = useState("");
+  const [mobilePortfolio, setMobilePortfolio] = useState(false);
+  const [deskPortfolio, setDeskPortfolio] = useState(true);
 
   const [data, setData] = useState(portfolioDataList);
 
@@ -35,7 +38,26 @@ const PortfolioSection = () => {
     setActive(e);
   };
 
-  // console.log(filterItem(data));
+  function handleResize() {
+    var width = window.innerWidth;
+    if (width <= 480) {
+      setDeskPortfolio(false);
+      setMobilePortfolio(true);
+      console.log("hello", width);
+    } else {
+      setMobilePortfolio(false);
+      setDeskPortfolio(true);
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("load", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("load", handleResize);
+    };
+  }, []);
 
   return (
     <PortfolioWrapper>
@@ -101,7 +123,13 @@ const PortfolioSection = () => {
             </button>
           </TabList>
           <TabPaneContent>
-            <ProjectStructure fiveList={fiveList} data={data} />
+            {deskPortfolio ? (
+              <ProjectStructure fiveList={fiveList} data={data} />
+            ) : mobilePortfolio ? (
+              <OwlSlider fiveList={fiveList} data={data} />
+            ) : (
+              ""
+            )}
           </TabPaneContent>
 
           {location.pathname === "/portfolio" ? (

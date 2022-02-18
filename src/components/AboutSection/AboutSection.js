@@ -26,6 +26,7 @@ const AboutSection = () => {
           data-aos-mirror="true"
           data-aos-duration="2000"
           data-aos-once="true"
+          className="about-left"
         >
           <AboutImg src={aboutImg} alt="aboutImg" />
         </AboutLeft>
@@ -35,7 +36,8 @@ const AboutSection = () => {
           data-aos-mirror="true"
           data-aos-duration="2000"
           data-aos-once="true"
-          // data-aos-delay="100"
+          data-aos-delay="100"
+          className="about-text"
         >
           <TopTitle>ABOUT ME</TopTitle>
           <Title className="title">Html Developer / Front End Developer</Title>

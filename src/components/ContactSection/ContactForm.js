@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { Peragraph, Title } from "../../assets/styles/Global.styles";
 import {
   ConatctFormLeft,
@@ -10,21 +11,50 @@ import { InfoCircleOutlined } from "@ant-design/icons";
 
 const ContactForm = () => {
   const [userForm] = Form.useForm();
+  const formUser = useRef();
   const [data, setData] = useState({});
-  const onFinish = (values) => {
-    console.log("Success:", values);
-    setData({
-      Name: values.Name,
-      Email: values.email,
-      Message: values.message,
-    });
-  };
+  // const onFinish = (values) => {
+  //   console.log("Success:", values);
+  //   setData({
+  //     Name: values.Name,
+  //     Email: values.email,
+  //     Message: values.message,
+  //   });
+  // };
 
   useEffect(() => {
     userForm.resetFields();
   });
 
-  console.log(data);
+  const sendEmail = (e) => {
+    // debugger;
+    // console.log(formUser.current.getFieldsValue);
+    // e.preventDefault();
+
+    setData({
+      Name: e.Name,
+      Email: e.email,
+      Message: e.message,
+    });
+    emailjs
+      .send(
+        "service_2o5zyp9",
+        "template_ydkrj3p",
+        userForm.getFieldsValue(),
+        "user_wFIY3zYcNta045kgizAij"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  console.log();
+
   return (
     <ConatctFormWrapper
       data-aos="fade-down"
@@ -76,9 +106,11 @@ const ContactForm = () => {
       </ConatctFormLeft>
       <ConatctFormRight>
         <Form
+          // ref={formUser}
+          // onSubmit={sendEmail}
           form={userForm}
           layout="vertical"
-          onFinish={onFinish}
+          onFinish={sendEmail}
           autoComplete="off"
           //   initialValues={{ requiredMarkValue: requiredMark }}
           //   onValuesChange={onRequiredTypeChange}
@@ -92,7 +124,12 @@ const ContactForm = () => {
             rules={[{ required: true, message: "Please type a Name!" }]}
             tooltip="Please type a Name"
           >
-            <Input placeholder="Your name" />
+            <Input
+              onChange={(e) =>
+                userForm.setFieldsValue({ Name: e.target.value })
+              }
+              placeholder="Your name"
+            />
           </Form.Item>
           <Form.Item
             label="Email"
@@ -103,7 +140,12 @@ const ContactForm = () => {
               icon: <InfoCircleOutlined />,
             }}
           >
-            <Input placeholder="Your email" />
+            <Input
+              onChange={(e) =>
+                userForm.setFieldsValue({ email: e.target.value })
+              }
+              placeholder="Your email"
+            />
           </Form.Item>
           <Form.Item
             label="Message"
@@ -114,24 +156,30 @@ const ContactForm = () => {
               icon: <InfoCircleOutlined />,
             }}
           >
-            <Input placeholder="Your  message" />
+            <Input
+              onChange={(e) =>
+                userForm.setFieldsValue({ message: e.target.value })
+              }
+              placeholder="Your  message"
+            />
           </Form.Item>
           <Form.Item>
             <Button
               type="primary"
+              htmlType="submit"
               className="btn"
-              onClick={() => {
-                userForm.submit();
-                // userForm.resetFields();
-                // setData({});
-              }}
+              // onClick={() => {
+              //   userForm.submit();
+              //   // userForm.resetFields();
+              //   // setData({});
+              // }}
             >
               Send Message
             </Button>
           </Form.Item>
         </Form>
 
-        {Object.entries(data).length > 0 ? (
+        {/* {Object.entries(data).length > 0 ? (
           <div
             className="form-detail"
             style={{ marginTop: "20px", textAlign: "left" }}
@@ -142,7 +190,7 @@ const ContactForm = () => {
           </div>
         ) : (
           ""
-        )}
+        )} */}
       </ConatctFormRight>
     </ConatctFormWrapper>
   );
